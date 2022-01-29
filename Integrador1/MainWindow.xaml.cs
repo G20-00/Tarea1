@@ -29,6 +29,7 @@ namespace Integrador1
 
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
+            char[] delimitador = {',' };
             Departamentos departamentos;
             // MessageBox.Show("Funciona");
             OpenFileDialog openFile = new OpenFileDialog();
@@ -36,10 +37,14 @@ namespace Integrador1
             {
                 StreamReader streamReader = new StreamReader(openFile.FileName);
                 String linea = "";
+                linea = streamReader.ReadLine();
                 while (linea != null)
                 {
                     linea = streamReader.ReadLine();
-                   
+                    string[] trozos = linea.Split(delimitador);
+                   departamentos = new Departamentos();
+                    MessageBox.Show(trozos[0]);
+                    MessageBox.Show(trozos[1]);
                 }
             }
                 }

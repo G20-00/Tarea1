@@ -8,6 +8,10 @@ namespace Integrador1
 {
     public class Departamentos
     {
+        public Departamentos()
+        {
+
+        }
         public String codigoDepartamento;
         public String codigo;
         public String municipio;
