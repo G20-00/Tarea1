@@ -58,7 +58,7 @@ namespace Integrador1
                         lista.Add(departamentos);
                     }
 
-                    String out = lista[1].ToString() + "";
+             Municipality out = lista[1];
                 }
                
                 
