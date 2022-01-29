@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Integrador1"
   ],
-  "SelectedNode": "\\Integrador1.sln",
+  "SelectedNode": "\\Integrador1\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

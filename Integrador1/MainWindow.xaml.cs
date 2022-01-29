@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Win32;
 using System.IO;
+using System.Collections;
 
 namespace Integrador1
 {
@@ -22,16 +23,22 @@ namespace Integrador1
     /// </summary>
     public partial class MainWindow : Window
     {
+        ArrayList lista;
         public MainWindow()
         {
+           
             InitializeComponent();
+            lista = new ArrayList();
+
         }
 
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
+           
+            //  MessageBox.Show("Funciona");
             char[] delimitador = {',' };
             Municipality departamentos;
-            // MessageBox.Show("Funciona");
+            
             OpenFileDialog openFile = new OpenFileDialog();
             if (openFile.ShowDialog() == true)
             {
@@ -41,10 +48,22 @@ namespace Integrador1
                 while (linea != null)
                 {
                     linea = streamReader.ReadLine();
-                    string[] trozos = linea.Split(delimitador);
-                   departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
                     
+                    string[] trozos = linea.Split(delimitador);
+                   if(trozos.Length > 3)
+                    {
+                        
+                        departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
+                        MessageBox.Show(departamentos.getMunicipalityCode());
+                        lista.Add(departamentos);
+                    }
+
+                    String out = lista[1].ToString() + "";
                 }
+               
+                
+
+
             }
                 }
     }
