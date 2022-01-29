@@ -29,7 +29,7 @@ namespace Integrador1
 
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
-  
+            Departamentos departamentos;
             // MessageBox.Show("Funciona");
             OpenFileDialog openFile = new OpenFileDialog();
             if (openFile.ShowDialog() == true)
