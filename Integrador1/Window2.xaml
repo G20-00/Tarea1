@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
     <Grid>
-        <ListView x:Name="Municipal" Margin="134,10,0,170" HorizontalAlignment="Left" Width="555">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="188*"/>
+            <ColumnDefinition Width="318*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="185*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="18*"/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="Municipal" Margin="17,18,0,162" HorizontalAlignment="Left" Width="555" Grid.ColumnSpan="3" Grid.Column="1">
 
             <ListView.View>
                 <GridView>
@@ -19,5 +27,18 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button x:Name="btnFiltro" HorizontalAlignment="Left" VerticalAlignment="Top"
+                   FontSize="30" Margin="34,353,0,0" FontFamily="Gabriola" Click="btnFiltro_Click" Height="44" Width="68"
+            >Filtrar</Button>
+
+        <ComboBox Name="Departamentos"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,34,0,0" Height="33" Width="116" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding DepartamentName }" FontSize="16"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
     </Grid>
 </Window>

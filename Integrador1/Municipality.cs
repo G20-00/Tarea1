@@ -27,7 +27,13 @@ namespace Integrador1
         public String DepartmentCode { get => departmentCode; set => departmentCode = value; }
         public String MunicipalityCode { get => municipalityCode; set => municipalityCode = value; }
         public String DepartamentName { get => departamentName; set => departamentName = value; }
-       public String MunicipalityName { get => municipalityName; set => municipalityName = value; }
+
+ public String getDepartment()
+        {
+            return departamentName;
+        }
+
+        public String MunicipalityName { get => municipalityName; set => municipalityName = value; }
         public String MunicipalityType { get => municipalityType; set => municipalityType = value; }
 
     }
