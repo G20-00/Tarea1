@@ -61,12 +61,12 @@ namespace Integrador1
 
         private void btnFiltro_Click(object sender, RoutedEventArgs e)
         {
-
+            int indice = Departamentos.SelectedIndex;
+            if(indice != -1)
+            {
+                MessageBox.Show(indice + "");
+            }
         }
 
-        private void Municipio_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }
