@@ -23,30 +23,13 @@ namespace Integrador1
                 this.municipalityType = municipalityType;
             }
 
-            public string getDepartamentCode()
-            {
-                return departmentCode;
-            }
+           
+        public String DepartmentCode { get => departmentCode; set => departmentCode = value; }
+        public String MunicipalityCode { get => municipalityCode; set => municipalityCode = value; }
+        public String DepartamentName { get => departamentName; set => departamentName = value; }
+       public String MunicipalityName { get => municipalityName; set => municipalityName = value; }
+        public String MunicipalityType { get => municipalityType; set => municipalityType = value; }
 
-            public string getMunicipalityCode()
-            {
-                return municipalityCode;
-            }
-
-            public string getDepartamentName()
-            {
-                return departamentName;
-            }
-
-            public string getMunicipalityName()
-            {
-                return municipalityName;
-            }
-
-            public string getMunicipalityType()
-            {
-                return municipalityType;
-            }
-
-        }
     }
+    
+}

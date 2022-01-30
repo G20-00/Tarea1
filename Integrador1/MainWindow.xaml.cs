@@ -16,6 +16,7 @@ using Microsoft.Win32;
 using System.IO;
 using System.Collections;
 
+
 namespace Integrador1
 {
     /// <summary>
@@ -38,7 +39,7 @@ namespace Integrador1
         {
             lista = new List<Municipality>();
             //  MessageBox.Show("Funciona");
-            char[] delimitador = {',' };
+            char[] delimitador = {',',':' };
             Municipality departamentos;
             
             OpenFileDialog openFile = new OpenFileDialog();
@@ -64,10 +65,15 @@ namespace Integrador1
                     linea = streamReader.ReadLine();
                 }
 
-             MessageBox.Show(lista.Count + " " +lista[12].getMunicipalityCode());
-
-
-
+             
+               Window2 ventanaN = new Window2();
+                ventanaN.Owner = this;
+                
+                ventanaN.ShowList(lista);
+                
+                ventanaN.ShowDialog();
+          
+              
             }
                 }
     }
