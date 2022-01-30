@@ -23,18 +23,20 @@ namespace Integrador1
     /// </summary>
     public partial class MainWindow : Window
     {
-        ArrayList lista;
+ public ArrayList lista;
         public MainWindow()
         {
            
             InitializeComponent();
-            lista = new ArrayList();
+           
 
         }
+ 
+        
 
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
-           
+            lista = new ArrayList();
             //  MessageBox.Show("Funciona");
             char[] delimitador = {',' };
             Municipality departamentos;
@@ -47,21 +49,23 @@ namespace Integrador1
                 linea = streamReader.ReadLine();
                 while (linea != null)
                 {
-                    linea = streamReader.ReadLine();
+                    
                     
                     string[] trozos = linea.Split(delimitador);
                    if(trozos.Length > 3)
                     {
                         
-                        departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
-                        MessageBox.Show(departamentos.getMunicipalityCode());
-                        lista.Add(departamentos);
+                     departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
+           //      MessageBox.Show(departamentos.getMunicipalityCode());
+                   lista.Add(departamentos);
                     }
 
-             Municipality out = lista[1];
+
+                    linea = streamReader.ReadLine();
                 }
-               
-                
+
+              //MessageBox.Show(lista.Count + " ");
+
 
 
             }
