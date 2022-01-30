@@ -31,7 +31,7 @@
                    FontSize="30" Margin="34,353,0,0" FontFamily="Gabriola" Click="btnFiltro_Click" Height="44" Width="68"
             >Filtrar</Button>
 
-        <ComboBox Name="Departamentos"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,34,0,0" Height="33" Width="116" >
+        <ComboBox Name="Departamentos"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,55,0,0" Height="33" Width="116"  >
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -40,5 +40,6 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
+        
     </Grid>
 </Window>

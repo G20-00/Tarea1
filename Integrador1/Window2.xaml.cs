@@ -32,10 +32,12 @@ namespace Integrador1
             if(count == 0)
             {
                 lista3 = new List<Municipality>();
+              ;
                 lista2 = lista;
                 count++;
                 Boolean found = false;
-                for(int i = 0; i < lista2.Count; i++)
+                
+                for (int i = 0; i < lista2.Count; i++)
                 {
                     for(int j =0; j < lista3.Count  && found == false; j++) 
                     {
@@ -43,17 +45,19 @@ namespace Integrador1
                         {
                             found = true;
                         }
-                        
                     }
+                    
                     if (found == false)
                     {
                         lista3.Add(lista2[i]);
 
-                    }
+                    }       
+
                     found = false;
 
                 }
                 Departamentos.ItemsSource = lista3;
+                
             }
             Municipal.ItemsSource = lista;
             Municipality muni = (Municipality)Municipal.SelectedItem;
@@ -61,12 +65,29 @@ namespace Integrador1
 
         private void btnFiltro_Click(object sender, RoutedEventArgs e)
         {
+            List<Municipality> showDepartments = new List<Municipality>();
+
             int indice = Departamentos.SelectedIndex;
-            if(indice != -1)
+           
+           if(indice != -1)
             {
-                MessageBox.Show(indice + "");
+                for(int i = 0; i < lista2.Count; i++)
+                {
+                    if(lista2[i].getDepartment() == lista3[indice].getDepartment())
+                    {
+                        showDepartments.Add(lista2[i]);
+                    }
+                }
+                Municipal.ItemsSource = showDepartments;
+                Municipality muni = (Municipality)Municipal.SelectedItem;
             }
+
+          
+           
+           
+            
         }
 
+      
     }
 }

@@ -57,7 +57,6 @@ namespace Integrador1
                     {
                         
                      departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
-           //      MessageBox.Show(departamentos.getMunicipalityCode());
                    lista.Add(departamentos);
                     }
 
