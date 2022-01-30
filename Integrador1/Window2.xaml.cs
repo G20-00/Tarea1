@@ -65,7 +65,7 @@ namespace Integrador1
 
             Municipal.ItemsSource = lista;
             Municipality muni = (Municipality)Municipal.SelectedItem;
-
+            LoadBarChartData(lista2);
         }
 
         private void btnFiltro_Click(object sender, RoutedEventArgs e)
