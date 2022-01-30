@@ -1,5 +1,5 @@
 ﻿Integrador1
-
+1.0.0.0
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\App.xaml
 2596426462
 
-51753947590
+7453732888
 195-1262221618
 MainWindow.xaml;Window2.xaml;
 
-False
+True
 

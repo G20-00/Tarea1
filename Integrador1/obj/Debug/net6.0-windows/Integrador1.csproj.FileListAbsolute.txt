@@ -88,3 +88,5 @@ D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.Assembly
 D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.csproj.CoreCompileInputs.cache
 D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.csproj.CopyComplete
 D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.genruntimeconfig.cache
+C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\bin\Debug\net6.0-windows\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.csproj.CopyComplete

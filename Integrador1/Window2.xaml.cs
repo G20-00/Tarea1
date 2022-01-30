@@ -86,6 +86,7 @@ namespace Integrador1
 
                 Municipal.ItemsSource = showDepartments;
                 Municipality muni = (Municipality)Municipal.SelectedItem;
+                LoadBarChartData(showDepartments);
 
            }
 
@@ -95,13 +96,13 @@ namespace Integrador1
             
         }
         
-        public void LoadBarChartData(List<Municipality> lista)
+        public void LoadBarChartData(List<Municipality> lista1)
         {
             int island = 0;
             int municipality = 0;
             int area = 0;
 
-            foreach (var data in lista)
+            foreach (var data in lista1)
             {
                 switch (data.getTypeMunicipality())
                 {
