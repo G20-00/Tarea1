@@ -36,7 +36,7 @@ namespace Integrador1
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
             lista = new List<Municipality>();
-            char[] delimitador = {',',':' };
+            char[] delimitador = {',', '/' };
             Municipality departamentos;
             
             OpenFileDialog openFile = new OpenFileDialog();
