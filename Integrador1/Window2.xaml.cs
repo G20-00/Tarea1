@@ -95,7 +95,44 @@ namespace Integrador1
             
         }
         
-         
+        public void LoadBarChartData(List<Municipality> lista)
+        {
+            int island = 0;
+            int municipality = 0;
+            int area = 0;
+
+            foreach (var data in lista)
+            {
+                switch (data.getTypeMunicipality())
+                {
+                    case "Municipio":
+                    {
+                        municipality++;
+                        break;
+                    }
+                        
+                    case "Isla":
+                    {
+                        island++;
+                        break;
+                    }
+                    
+                    case "Área no municipalizada":
+                    {
+                        area++;
+                        break;
+                    }
+                }
+            }
+            
+            ((BarSeries)mcChart.Series[0]).ItemsSource =    
+                new KeyValuePair<string, int>[]{    
+                    new KeyValuePair<string, int>("Municipio", municipality),    
+                    new KeyValuePair<string, int>("Isla", island),    
+                    new KeyValuePair<string, int>("Area No Mu.", area),    
+                   
+                };    
+        } 
 
       
     }
