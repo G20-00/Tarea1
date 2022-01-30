@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\obj\Debug\net6.0-windows\
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\
 Integrador1
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\App.xaml
-11407045341
+
+2-1094938431
 
 6-1628658051
 1941142463650
-MainWindow.xaml;
+App.xaml;MainWindow.xaml;
 
-False
+True
 

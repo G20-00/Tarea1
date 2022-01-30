@@ -23,52 +23,49 @@ namespace Integrador1
     /// </summary>
     public partial class MainWindow : Window
     {
- public ArrayList lista;
+        private ArrayList lista;
+
         public MainWindow()
         {
-           
             InitializeComponent();
            
-
         }
  
-        
-
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
-            lista = new ArrayList();
-            //  MessageBox.Show("Funciona");
-            char[] delimitador = {',' };
-            Municipality departamentos;
-            
-            OpenFileDialog openFile = new OpenFileDialog();
-            if (openFile.ShowDialog() == true)
+            /*lista = new ArrayList();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            if (openFileDialog.ShowDialog() == true)
             {
-                StreamReader streamReader = new StreamReader(openFile.FileName);
-                String linea = "";
-                linea = streamReader.ReadLine();
-                while (linea != null)
+                string fileName = openFileDialog.FileName;
+
+                if (File.Exists(fileName))
                 {
-                    
-                    
-                    string[] trozos = linea.Split(delimitador);
-                   if(trozos.Length > 3)
+
+                    string[] lines = File.ReadAllLines(fileName);
+                    int vali = 0;
+
+                    foreach (var line in lines)
                     {
-                        
-                     departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
-           //      MessageBox.Show(departamentos.getMunicipalityCode());
-                   lista.Add(departamentos);
+                        var values = line.Split(',');
+
+                        if (vali == 0)
+                        {
+                            vali = 1;
+                            continue;
+                        }
+
+                        lista.Add(new Municipality(values[0], values[1], values[2], values[3], values[4]));
+
                     }
 
-
-                    linea = streamReader.ReadLine();
                 }
+            }*/
 
-              //MessageBox.Show(lista.Count + " ");
-
-
-
-            }
-                }
+            this.Close();
+            App app = new App(lista);
+        }
     }
+    
 }

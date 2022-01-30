@@ -1,17 +1,38 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Integrador1
 {
     /// <summary>
-    /// Interaction logic for App.xaml
+    /// Lógica de interacción para App.xaml
     /// </summary>
-    public partial class App : Application
+    public partial class App : Window
     {
+
+        ArrayList list;
+
+        public App(ArrayList list)
+        {
+            InitializeComponent();
+            this.list = list;
+        }
+
+        public App()
+        {
+            InitializeComponent();
+           
+        }
     }
 }

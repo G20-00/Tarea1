@@ -61,3 +61,11 @@ C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\obj\Debug\net6.0-windows\In
 C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.genruntimeconfig.cache
 C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\bin\Debug\net6.0-windows\ref\Integrador1.dll
 C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\bin\Debug\net6.0-windows\Integrador1.pdb
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.csproj.AssemblyReference.cache
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\App.g.cs
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1_MarkupCompile.cache
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1_MarkupCompile.lref
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.dll
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\ref\Integrador1.dll
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Debug\net6.0-windows\Integrador1.pdb
