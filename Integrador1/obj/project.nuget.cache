@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "j3dM/c2/6FHzQX2pDHJLWJyK+j1Yg/E2ge9Oe1LGF/o8tppj4TgMggGgDLTlL+s/ANAI+2Z+Hiq/fZ2LDBFT0g==",
+  "dgSpecHash": "KFk/DWfKNSO+vAnAJuF9MWVEi0yKaqDH99QQn0fFxIQnMLsJskmRsJgtExVKnphGPrBEXQUpsRRbmxA7JwqETA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Documents\\GitHub\\Tarea1\\Integrador1\\Integrador1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\WorkSpace\\C#\\Tarea1\\Integrador1\\Integrador1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\dotnetprojects.wpftoolkit.datavisualization\\6.1.94\\dotnetprojects.wpftoolkit.datavisualization.6.1.94.nupkg.sha512"
+  ],
   "logs": []
 }

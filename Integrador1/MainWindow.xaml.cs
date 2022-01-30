@@ -25,12 +25,10 @@ namespace Integrador1
     public partial class MainWindow : Window
     {
         List<Municipality> lista;
+
         public MainWindow()
         {
-           
             InitializeComponent();
-           
-
         }
  
         
@@ -38,42 +36,41 @@ namespace Integrador1
         private void btnExplorar_Click(object sender, RoutedEventArgs e)
         {
             lista = new List<Municipality>();
-            //  MessageBox.Show("Funciona");
             char[] delimitador = {',',':' };
             Municipality departamentos;
             
             OpenFileDialog openFile = new OpenFileDialog();
+
             if (openFile.ShowDialog() == true)
             {
                 StreamReader streamReader = new StreamReader(openFile.FileName);
-                String linea = "";
+                var linea = "";
                 linea = streamReader.ReadLine();
+
                 while (linea != null)
                 {
                     
-                    
-                    string[] trozos = linea.Split(delimitador);
+                   string[] trozos = linea.Split(delimitador);
+
                    if(trozos.Length == 5 && trozos[3] != "")
-                    {
+                   {
                         
-                     departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
-                   lista.Add(departamentos);
-                    }
+                        departamentos = new Municipality(trozos[0], trozos[1], trozos[2], trozos[3], trozos[4]);
+                        lista.Add(departamentos);
+                   }
 
 
                     linea = streamReader.ReadLine();
                 }
 
-             
-               Window2 ventanaN = new Window2();
+                Window2 ventanaN = new Window2();
                 ventanaN.Owner = this;
-                
                 ventanaN.ShowList(lista);
-                
+                ventanaN.LoadBarChartData(lista);
                 ventanaN.ShowDialog();
           
               
             }
-                }
+        }
     }
 }

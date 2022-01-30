@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.DataVisualization.Charting;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -22,9 +23,11 @@ namespace Integrador1
         List<Municipality> lista2;
         List<Municipality> lista3;
         int count = 0;
+
         public Window2()
         {
             InitializeComponent();
+            
         }
 
         public void ShowList(List<Municipality> lista)
@@ -32,7 +35,7 @@ namespace Integrador1
             if(count == 0)
             {
                 lista3 = new List<Municipality>();
-              ;
+              
                 lista2 = lista;
                 count++;
                 Boolean found = false;
@@ -59,8 +62,10 @@ namespace Integrador1
                 Departamentos.ItemsSource = lista3;
                 
             }
+
             Municipal.ItemsSource = lista;
             Municipality muni = (Municipality)Municipal.SelectedItem;
+
         }
 
         private void btnFiltro_Click(object sender, RoutedEventArgs e)
@@ -70,7 +75,7 @@ namespace Integrador1
             int indice = Departamentos.SelectedIndex;
            
            if(indice != -1)
-            {
+           {
                 for(int i = 0; i < lista2.Count; i++)
                 {
                     if(lista2[i].getDepartment() == lista3[indice].getDepartment())
@@ -78,15 +83,19 @@ namespace Integrador1
                         showDepartments.Add(lista2[i]);
                     }
                 }
+
                 Municipal.ItemsSource = showDepartments;
                 Municipality muni = (Municipality)Municipal.SelectedItem;
-            }
+
+           }
 
           
            
            
             
         }
+        
+         
 
       
     }

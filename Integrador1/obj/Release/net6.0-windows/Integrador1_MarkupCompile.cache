@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\obj\Release\net6.0-windows\
+D:\WorkSpace\C#\Tarea1\Integrador1\obj\Release\net6.0-windows\
 Integrador1
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-C:\Users\Usuario\Documents\GitHub\Tarea1\Integrador1\App.xaml
-11407045341
+D:\WorkSpace\C#\Tarea1\Integrador1\App.xaml
+3-2042398384
 
-4-328443349
-1941142463650
-MainWindow.xaml;
+6-901802584
+196473421325
+MainWindow.xaml;Window2.xaml;Window3.xaml;
 
 True
 

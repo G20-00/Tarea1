@@ -17,4 +17,8 @@
     <Page Remove="Window1.xaml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DotNetProjects.WpfToolkit.DataVisualization" Version="6.1.94" />
+  </ItemGroup>
+
 </Project>
